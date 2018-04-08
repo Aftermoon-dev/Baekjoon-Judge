@@ -1,3 +1,4 @@
+/*** 미완성입니다! ***/
 #include <stdio.h>
 
 int test, people, score[1001], average, passpeople;
