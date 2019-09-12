@@ -1,7 +1,6 @@
-/*** 미완성입니다! ***/
 #include <stdio.h>
 
-int test, people, score[1001], average, passpeople;
+int test, people, score[1000], average, passpeople;
 double percent;
 
 int main(void) {
@@ -18,13 +17,13 @@ int main(void) {
         }
         average = average/people;
         for(int w=0; w<people; w++) {
-                if(score[w] >= average) {
+                if(score[w] > average) {
                     passpeople++;
                 }
         }
 
-        percent = (passpeople/people)*100;
-        printf("%.3f", percent);
+        percent = ((double) passpeople/ (double) people)*100.0;
+        printf("%.3f%%\n", percent);
     }
     return 0;
 }
